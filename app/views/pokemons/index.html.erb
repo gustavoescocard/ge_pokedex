@@ -1,7 +1,21 @@
-<div>
-  <pre>
+<div class="container">
+  <div class="row d-flex">
     <% (0..150).each do |poke_number| %>
-      <%= @pokemons[poke_number].name.capitalize %>
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="<%= @poke_images[poke_number] %>" class="card-img-top">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <p class="card-title"><%= @poke_names[poke_number] %></p>
+                <p class="card-text">Tipo 1 | Tipo 2</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     <% end %>
-  </pre>
+  </div>
 </div>
