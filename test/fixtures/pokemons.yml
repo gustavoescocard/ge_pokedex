@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  national_number: 1
+  picture: MyString
+  name: MyString
+  type: MyText
+
+two:
+  national_number: 1
+  picture: MyString
+  name: MyString
+  type: MyText

@@ -1,15 +1,15 @@
 <div class="container">
   <div class="row d-flex">
-    <% (0..150).each do |poke_number| %>
+    <% @pokemons.each do |pokemon| %>
       <div class="col-md-4 mb-3">
         <div class="card">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="<%= @poke_images[poke_number] %>" class="card-img-top">
+              <img src="<%= pokemon.picture %>" class="card-img-top">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <p class="card-title"><%= @poke_names[poke_number] %></p>
+                <p class="card-title"><%= "##{pokemon.national_number.to_s} #{pokemon.name}" %></p>
                 <p class="card-text">Tipo 1 | Tipo 2</p>
               </div>
             </div>
